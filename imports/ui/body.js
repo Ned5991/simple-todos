@@ -71,6 +71,10 @@ Template.body.events({
       text,
 
       createdAt: new Date(), // current time
+	  
+	  owner: Meteor.userId(),
+
+      username: Meteor.user().username,
 
     });
 
